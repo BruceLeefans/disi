@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		img {
+			transition: all 2s;
+			position: absolute;
+		}
+		div:hover img {
+			transform: rotateY(180deg)
+		}
+		.qian {
+			backface-visibility: hidden;
+			/* 当元素背面对着你.就会隐藏 */
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="1.jpg" alt="">
+		<img src="2.jpg" alt="" class="qian">
+	</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			/* transition: width 3s ease 0s,height 3s ease 3s, background-color 6s ease 0s; */
+			/* 让你可以观测到状态A到状态B的过程 */
+			/* 多组过度效果，请用都好隔开 */
+			transition: all 3s;
+			/* 如果所有过度效果都是同时发生,那么请使用ALL */
+		}
+		div:hover {
+			width: 400px;
+			height: 400px;
+			background-color: #0f0;
+			border-radius: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

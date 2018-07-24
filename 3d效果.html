@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div {
+			width: 150px;
+			margin: 300px auto;
+			perspective: 300px;
+			/* 模拟肉眼距离元素1000px */
+			/* 近大远小 */
+		}
+		img {
+			transition: all 5s;
+		}
+		div:hover img {
+			transform: rotateX(360deg)
+			/* 必须要给父元素添加视距,才能用手3D效果 */
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="1.jpg" alt="">
+	</div>
+</body>
+</html>
